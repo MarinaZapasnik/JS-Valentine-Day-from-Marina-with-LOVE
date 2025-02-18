@@ -12,7 +12,8 @@
     font-style: normal;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -28,9 +29,12 @@ body {
     max-width: 768px;
     min-width: 320px;
     display: flex;
-    justify-content: space-between; /* Центрирует по горизонтали */
-    align-items: center; /* Центрирует по вертикали */
-    min-height: 100vh; /* Убедитесь, что body занимает всю высоту окна */
+    justify-content: space-between;
+    /* Центрирует по горизонтали */
+    align-items: center;
+    /* Центрирует по вертикали */
+    min-height: 100vh;
+    /* Убедитесь, что body занимает всю высоту окна */
     margin: auto;
     background-color: #fff;
     background-image: url('charm-assets/Romantic-Love-Seamless-Pattern-Vector.jpg');
@@ -50,7 +54,8 @@ body {
     height: 20px;
     background-image: url('charm-assets/heart.png');
     background-size: contain;
-    pointer-events: none; /* Игнорирует события мыши */
+    pointer-events: none;
+    /* Игнорирует события мыши */
     z-index: 10;
     animation: flyHeart 3s ease-in-out forwards;
 }
@@ -60,7 +65,7 @@ body {
         transform: scale(0) translateY(0);
         opacity: 1;
     }
-    
+
     100% {
         transform: scale(1) translateY(-200px);
         opacity: 0;
@@ -80,10 +85,10 @@ body {
     background-color: #f6b2a9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; 
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 header {
@@ -117,15 +122,19 @@ input[type="text"] {
 }
 
 input[type="text"]::placeholder {
-    font-family: 'AmaticSC', sans-serif; /* Устанавливает шрифт для placeholder */
-    color: #c6859c; /* Цвет текста подсказки */
-    font-size: 30px; /* Размер шрифта */
-    
-    
+    font-family: 'AmaticSC', sans-serif;
+    /* Устанавливает шрифт для placeholder */
+    color: #c6859c;
+    /* Цвет текста подсказки */
+    font-size: 30px;
+    /* Размер шрифта */
+
+
 }
+
 button {
     padding: 10px 20px;
-    background-color:#d63341;
+    background-color: #d63341;
     color: #f6b2a9;
     border: none;
     border-radius: 5px;
@@ -140,7 +149,7 @@ button:hover {
 }
 
 #valentine {
-    
+
     font-size: 42px;
     color: #333;
     font-family: 'AmaticSC', sans-serif;
@@ -152,7 +161,7 @@ button:hover {
 }
 
 
-   
+
 
 
 footer {
