@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'AmaticSC';
+    src: url('charm-assets/fonts/AmaticSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AmaticSC';
+    src: url('charm-assets/fonts/AmaticSC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    box-sizing: border-box;
+    font-family: 'AmaticSC', sans-serif;
+    max-width: 768px;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-between; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+    min-height: 100vh; /* Убедитесь, что body занимает всю высоту окна */
+    margin: auto;
+    background-color: #fff;
+    background-image: url('charm-assets/Romantic-Love-Seamless-Pattern-Vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('charm-assets/heart.png');
+    background-size: contain;
+    pointer-events: none; /* Игнорирует события мыши */
+    z-index: 10;
+    animation: flyHeart 3s ease-in-out forwards;
+}
+
+@keyframes flyHeart {
+    0% {
+        transform: scale(0) translateY(0);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: scale(1) translateY(-200px);
+        opacity: 0;
+    }
+}
+
+
+.container {
+    width: 100%;
+    min-width: 600px;
+    max-width: 250px;
+    height: 700px;
+    max-height: 700px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f6b2a9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'AmaticSC', sans-serif;
+    font-weight: bold;
+    color: #d63341;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex-grow: 1;
+    padding-top: 30px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #d63341;
+    border-radius: 5px;
+    font-size: 25px;
+    width: 100%;
+    max-width: 300px;
+}
+
+input[type="text"]::placeholder {
+    font-family: 'AmaticSC', sans-serif; /* Устанавливает шрифт для placeholder */
+    color: #c6859c; /* Цвет текста подсказки */
+    font-size: 30px; /* Размер шрифта */
+    
+    
+}
+button {
+    padding: 10px 20px;
+    background-color:#d63341;
+    color: #f6b2a9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'AmaticSC', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+button:hover {
+    background-color: #b52759;
+}
+
+#valentine {
+    
+    font-size: 42px;
+    color: #333;
+    font-family: 'AmaticSC', sans-serif;
+    max-width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #f6b2a9;
+}
+
+
+   
+
+
+footer {
+    padding: 20px;
+    font-size: 35px;
+    color: #d63341;
+}
